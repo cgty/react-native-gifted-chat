@@ -34,9 +34,9 @@ import GiftedChatInteractionManager from './GiftedChatInteractionManager';
 // TODO move these values to Constants.js (also with used colors #b2b2b2)
 const MIN_COMPOSER_HEIGHT = Platform.select({
   ios: 33,
-  android: 41,
+  android: 52,
 });
-const MAX_COMPOSER_HEIGHT = 100;
+const MAX_COMPOSER_HEIGHT = 107;
 
 class GiftedChat extends React.Component {
   constructor(props) {
@@ -548,7 +548,7 @@ GiftedChat.defaultProps = {
   renderAccessory: null,
   onPressActionButton: null,
   bottomOffset: 0,
-  minInputToolbarHeight: 44,
+  minInputToolbarHeight: 56,
   listViewProps: {},
   keyboardShouldPersistTaps: Platform.select({
     ios: 'never',
